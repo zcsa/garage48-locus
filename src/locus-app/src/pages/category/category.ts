@@ -22,6 +22,10 @@ export class CategoryPage {
 
   }
 
+   categoryTapped() {
+      this.navCtrl.push(ServicesDetailPage)
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad CategoryPage');
   }

@@ -23,7 +23,8 @@ import {MapTabsPage} from '../pages/map-tabs/map-tabs'
   entryComponents: [
     MyApp,
     MapTabsPage,
-    CategoryPage
+    CategoryPage,
+    ServicesDetailPage
   ],
   providers: [
     StatusBar,
