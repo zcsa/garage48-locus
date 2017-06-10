@@ -17,7 +17,7 @@
 
 <ion-content padding>
   <ion-list>
-  <button ion-item *ngFor="let item of categories" (click)="listTapped($event, item.list)">
+  <button ion-item *ngFor="let item of categories" (click)="listTapped($event, item)">
     <ion-icon [name]="getIcon(item)"></ion-icon>
       {{item.name}}
        <ion-icon class="float-right" name="arrow-forward"></ion-icon> 

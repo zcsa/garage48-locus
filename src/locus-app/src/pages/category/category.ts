@@ -18,12 +18,16 @@ export class CategoryPage {
   list: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.list = this.navParams.data; 
+    this.list = this.navParams.get("list"); 
 
   }
 
    categoryTapped() {
       this.navCtrl.push(ServicesDetailPage)
+  }
+
+  getIcon(item) {
+    return item.icon
   }
 
   ionViewDidLoad() {

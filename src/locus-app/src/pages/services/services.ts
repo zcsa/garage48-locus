@@ -15,8 +15,6 @@ import { ServicesDetailPage, CategoryPage} from '../pages';
 })
 export class ServicesPage {
 
- 
-
   hospitals = [{team: 'Hospital A', icon: "medkit"},
         {team: 'Hospital B', icon: "medkit"}];
   schools = [{team: 'School A',icon: "school"},
@@ -43,8 +41,17 @@ export class ServicesPage {
     return item.icon
   }
 
-  listTapped(list) {
-      this.nav.push(CategoryPage, list)
+  listTapped(item) {
+  
+      if (item.name=="Hospitals") {
+        this.nav.push(CategoryPage, {"list": this.hospitals})
+      } else if (item.name=="Schools") {
+        this.nav.push(CategoryPage, {"list": this.schools})
+      } else if (item.name=="Stores") {
+        this.nav.push(CategoryPage, {"list": this.stores})
+      } else if (item.name=="Organizations") {
+        this.nav.push(CategoryPage, {"list": this.organizations})
+      }
   }
 
   ionViewDidLoad() {
