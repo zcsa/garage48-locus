@@ -11,8 +11,8 @@ import {MapTabsPage} from '../pages/map-tabs/map-tabs'
 @NgModule({
   declarations: [
     MyApp,
-    MapTabsPage, 
-    ServicesDetailPage, 
+    MapTabsPage,
+    ServicesDetailPage,
     CategoryPage
   ],
   imports: [
@@ -22,7 +22,8 @@ import {MapTabsPage} from '../pages/map-tabs/map-tabs'
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    MapTabsPage
+    MapTabsPage,
+    CategoryPage
   ],
   providers: [
     StatusBar,
