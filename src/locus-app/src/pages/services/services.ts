@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ServicesDetailPage, CategoryPage} from '../pages';
 
 /**
  * Generated class for the ServicesPage page.
@@ -14,7 +15,36 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ServicesPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+ 
+
+  hospitals = [{team: 'Hospital A', icon: "medkit"},
+        {team: 'Hospital B', icon: "medkit"}];
+  schools = [{team: 'School A',icon: "school"},
+	    {team: 'School B',icon: "school"},
+	    {team: 'School C',icon: "school"}];
+  stores = [{team: 'Shop A',icon: "cart"}, 
+	    {team: 'Shop B',icon: "cart"}];
+  organizations= [{team: 'Red Cross Site',icon: "globe",color: "red"},	
+	     {team: 'FCA Site',icon: "globe",color: "orange"},
+      {team: 'Relief International Site',icon: "globe",color: "blue"}];
+
+ categories = [{name: "Hospitals", icon: "medkit", list: this.hospitals},
+  {name: "Schools", icon: "school", list: this.schools},
+  {name: "Stores", icon: "cart", list: this.stores},
+  {name: "Organizations", icon: "globe", list: this.organizations}];
+
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    public nav: NavController) {
+  }
+
+  getIcon(item) {
+    return item.icon
+  }
+
+  listTapped(list) {
+      this.nav.push(CategoryPage, list)
   }
 
   ionViewDidLoad() {
