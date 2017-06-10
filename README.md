@@ -20,7 +20,9 @@ Should think of Ionic as single page Angular2 application
 `typings.json` TypeScript definition files  
 `resources/` contains media for icons, splash screens  
 `plugins/` any native device plugins, such as camera or geolocation  
-`platforms/` build for specific platform. Normally don't have to modify manually  
+`platforms/` build for specific platform. Normally don't have to modify manually   
+
+
  
 
 
