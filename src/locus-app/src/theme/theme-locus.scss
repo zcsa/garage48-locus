@@ -1,16 +1,17 @@
 @import "./ionic.globals";
 
 
+
 // Locus Theme
 // ----------------------------------
 
 $colors: (
 
-  primary:    #007aff,
-  secondary:  #32db64,
-  danger:     #d91e18,
-  light:      #f4f4f4,
-  dark:       #222,
+  primary:    #32908F,
+  secondary:  #212D40,
+  danger:     #364156,
+  light:      #EFDDB8,
+  dark:       #11151C,
 
 ) !default;
 
@@ -27,16 +28,28 @@ $content-padding:            16px !default;
 $content-margin:             16px !default;
 
 $toolbar-background:         #151515 !default;
-$toolbar-border-color:       #222 !default;
+$toolbar-border-color:       #11151C !default;
 $toolbar-text-color:         $text-color !default;
 $toolbar-active-color:       $link-color !default;
-$toolbar-inactive-color:     #8c8c8c !default;
+$toolbar-inactive-color:     #EFDDB8 !default;
 
-$tabs-background:            #151515 !default;
-$tabs-border-color:          #222 !default;
-$tabs-tab-color-inactive:    #8c8c8c !default;
-$tabs-tab-color-active:      $link-color !default;
+$tabs-background:            #212D40 !default;
+$tabs-border-color:          #11151C !default;
+$tabs-tab-color-inactive:    #32908F !default;
+$tabs-tab-color-active:      #EFDDB8 !default;
+$tabs-height:                 70px !default;
+$tabs-ios-tab-font-size:         20px !default;
+$tabs-ios-tab-font-weight:         700 !default;
+$tabs-ios-tab-padding-top:    10px !default;
+$tabs-md-tab-font-weight:    600 !default;
+$tabs-wp-tab-font-weight:    600 !default;
+
+
+$tabs-ios-tab-padding-bottom:    10px !default;
+$tabs-ios-tab-text-font-size-side-icon: 50px !default;
+$tabs-icon-size:              30px !default;
 
 $list-text-color:            $text-color !default;
 $list-background-color:      #242424 !default;
 $list-border-color: #000 !default;
+
