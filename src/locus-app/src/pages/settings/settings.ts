@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {MapTabsPage} from '../map-tabs/map-tabs';
 
 
 @IonicPage()
@@ -8,6 +9,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'settings.html',
 })
 export class SettingsPage {
+
+  mapTabsPage = MapTabsPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
