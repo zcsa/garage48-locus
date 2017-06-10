@@ -42,7 +42,7 @@ export class ServicesPage {
   }
 
   listTapped(item) {
-  
+  console.log('**item:', item);
       if (item.name=="Hospitals") {
         this.nav.push(CategoryPage, {"list": this.hospitals})
       } else if (item.name=="Schools") {

@@ -15,7 +15,7 @@
 
 <ion-content padding>
   <ion-list>
-  <button ion-item *ngFor="let item of this.list" (click)="categoryTapped($event)">
+  <button ion-item *ngFor="let item of this.list" (click)="categoryTapped()">
     <ion-icon [name]="getIcon(item)"></ion-icon>
       {{item.team}}
        <ion-icon class="float-right" name="arrow-forward"></ion-icon> 

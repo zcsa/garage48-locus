@@ -19,11 +19,11 @@ export class CategoryPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.list = this.navParams.get("list"); 
-
+    console.log('**nav params:', this.navParams);
   }
 
    categoryTapped() {
-      this.navCtrl.push(ServicesDetailPage)
+      this.navCtrl.push(ServicesDetailPage);
   }
 
   getIcon(item) {
