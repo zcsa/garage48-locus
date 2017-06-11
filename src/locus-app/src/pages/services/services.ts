@@ -44,13 +44,13 @@ export class ServicesPage {
   listTapped(item) {
   console.log('**item:', item);
       if (item.name=="Hospitals") {
-        this.nav.push(CategoryPage, {"list": this.hospitals,"name": "Hospitals"})
+        this.nav.push(CategoryPage, {"list": this.hospitals,"name": "HOSPITALS"})
       } else if (item.name=="Schools") {
-        this.nav.push(CategoryPage, {"list": this.schools,"name": "Schools"})
+        this.nav.push(CategoryPage, {"list": this.schools,"name": "SCHOOLS"})
       } else if (item.name=="Stores") {
-        this.nav.push(CategoryPage, {"list": this.stores,"name": "Stores"})
+        this.nav.push(CategoryPage, {"list": this.stores,"name": "STORES"})
       } else if (item.name=="Organizations") {
-        this.nav.push(CategoryPage, {"list": this.organizations,"name": "Organizations"})
+        this.nav.push(CategoryPage, {"list": this.organizations,"name": "ORGANIZATIONS"})
       }
   }
 
