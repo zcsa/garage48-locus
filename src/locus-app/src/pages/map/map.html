@@ -1,2 +1,4 @@
-<ion-content padding class="background-map">
+<ion-content padding [ngClass]="{'background-map': isBackgroundSelected, 'map-selected': isMapSelected}">
+
+<div style="z-index: 1000; width: 100%; height: 100%;" on-tap="changeToSelected()"></div>
 </ion-content>
