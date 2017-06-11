@@ -1,7 +1,8 @@
 .background-radar {
-    animation: rotateRadar 6s infinite ease-in-out;
+    animation: rotateRadar 5s infinite ease-in-out;
     color: black;
     background-color: black;
+    $background-color: black;
 }
 
 @keyframes rotateRadar {
