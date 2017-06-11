@@ -1,5 +1,5 @@
 .background-radar {
-    animation: rotateRadar 12s infinite ease-in-out;
+    animation: rotateRadar 8s infinite ease-in-out;
 }
 
 @keyframes rotateRadar {
@@ -9,11 +9,11 @@
     }
 
     25% {
-        transform: rotate(4deg);
+        transform: rotate(6deg);
     }
 
     75% {
-        transform: rotate(-4deg);
+        transform: rotate(-6deg);
     }
 
     100% {
