@@ -1,12 +1,14 @@
 
 
-<ion-header class="header" color="primary">
-  <ion-navbar class="header" color="primary">
+<ion-header class="header123" color="primary">
+  <ion-navbar class="header123" color="primary">
     <button menuToggle>
       <ion-icon name="menu"></ion-icon>
       </button>
       <ion-title dark class="title123" color="dark" text-color="dark">
+      <p dark color="dark">
       Categories
+      </p>
       </ion-title>
   </ion-navbar>
   
@@ -15,12 +17,15 @@
 
 <ion-content padding>
   <ion-list>
-  <button ion-item *ngFor="let item of categories" (click)="listTapped(item)">
-    <ion-icon class="firstListIcon" [name]="getIcon(item)"></ion-icon>
+  <button ion-item class="float-left" *ngFor="let item of categories" (click)="listTapped(item)">
+    <ion-icon class="firstListIcon float-center" [name]="getIcon(item)"></ion-icon>
       {{item.name}}
        <ion-icon class="float-right" name="arrow-forward"></ion-icon> 
     </button> 
 </ion-list>
+
+
+
 </ion-content>
 
 

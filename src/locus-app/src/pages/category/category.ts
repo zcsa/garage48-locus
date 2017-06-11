@@ -16,9 +16,11 @@ import { ServicesDetailPage} from '../pages';
 export class CategoryPage {
 
   list: any;
+  name: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.list = this.navParams.get("list"); 
+    this.list = this.navParams.get("list");
+     this.name = this.navParams.get("name");
     console.log('**nav params:', this.navParams);
   }
 
